@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Design tokens taken from the Figma file.
+   Each --color-xxx becomes Tailwind classes, e.g. bg-page, text-gold, border-line */
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-page: #10131c;      /* page background */
+  --color-surface: #181b25;   /* cards, banner */
+  --color-surface-2: #1c1f29; /* chips, movie cards */
+  --color-surface-3: #272a34; /* poster placeholder, icon circles */
+  --color-line: #32343f;      /* borders */
+  --color-footer: #0b0e17;
+
+  --color-gold: #ffc400;      /* main accent */
+  --color-gold-dark: #6d5300; /* text on gold buttons */
+  --color-gold-hover: #d99f00; /* primary button hover */
+  --color-ink: #e0e2ef;       /* main text */
+  --color-muted: #d3c5ab;     /* secondary text */
+  --color-soft: #dcd1bc;
+  --color-mint: #8dffc9;      /* match % / growth */
+  --color-sky: #b0c6ff;       /* blue accent */
+  --color-royal: #005edb;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Material Icons are written as text, e.g. <Icon name="star" /> */
+.material-icons {
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* Visible blue focus ring on every control (from the handoff spec) */
+:focus-visible {
+  outline: 2px solid #3478f6;
+  outline-offset: 2px;
+}
+
+/* Respect "reduce motion" settings: remove animations and transitions */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

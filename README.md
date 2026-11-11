@@ -1,30 +1,68 @@
-# CineScope
+# CineCrush 🎬
 
-React + Vite + Tailwind CSS v4 + React Router. Movie data from TMDB.
+A modern, high-performance web application for discovering trending cinema, exploring curated reels, and tracking top box office hits with real-time match ratings and detailed movie insights.
 
-## Run it
-1. `npm install`
-2. Copy `.env.example` to `.env` and paste your TMDB token (see below)
-3. `npm run dev` and open the link it prints (usually http://localhost:5173)
+---
 
-## Get a TMDB token
-1. Create a free account at https://www.themoviedb.org/signup
-2. Go to Settings > API (https://www.themoviedb.org/settings/api) and request an API key (choose "Developer", personal use)
-3. Copy the **API Read Access Token** (the long one, NOT the short "API Key")
-4. Put it in `.env`:  VITE_TMDB_TOKEN=your_long_token
-5. Restart `npm run dev` after editing `.env`
+## 🚀 Key Features
 
-## Pages (routes)
-/                 Home / Discover
-/search?q=Avengers Search results (the text and page live in the URL)
-/movie/:id        Movie details (?tab=cast | trailers | similar)
-/favorites        My Favorites (saved in your browser)
+- **Featured Spotlight & Reel Slider:** Interactive featured banner highlighting trending blockbusters with direct access to trailers and detailed specs.
+- **Smart Filter & Search:** Real-time search by title or actor, paired with genre and year/rating filters.
+- **Top Box Office & Trending Trackers:** Dynamic lists tracking top-voted movies and box office performance.
+- **Personalized Favorites:** Seamlessly save and manage your personal watchlist.
+- **Pass & Perks System:** Built-in rewards interface for exclusive screening passes.
 
-## Folder guide
-src/api/tmdb.js            all API calls
-src/context/               FavoritesContext (saved movies + toast), GenresContext
-src/utils/format.js        small text helpers (runtime, money, year...)
-src/pages/                 one file per page
-src/components/            Header, Footer, Hero, MovieCard, MovieGrid, Toast, ...
-src/components/details/    sections of the Movie Details page
-src/index.css              Tailwind + the design colours from Figma
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React (Vite)
+- **Styling:** Tailwind CSS / Custom CSS & Material Icons
+- **Data Provider:** [TMDB API](https://www.themoviedb.org/)
+
+---
+
+## 🧠 Things Learnt
+
+- **Asynchronous State Management:** Optimized data fetching patterns to deliver instant UI feedback while parsing external API responses.
+- **Responsive UX/UI Architecture:** Mastered dark-mode aesthetic design principles, dynamic layout cards, and smooth transitions for media-heavy interfaces.
+- **Client-Side Storage:** Implemented persistent user watchlist state across browser sessions.
+
+---
+
+## 🥊 Challenges & Solutions
+
+- **API Data Mapping:**
+  - _Challenge:_ Normalizing varied endpoint formats (TMDB genres, ratings, runtime formats).
+  - _Solution:_ Created centralized transformer functions to standardize movie data models before state injection.
+- **Responsive Reel Navigation:**
+  - _Challenge:_ Maintaining smooth transitions and responsive layout across desktop and mobile screens for wide hero sliders.
+  - _Solution:_ Leveraged CSS flex container properties and touch/swipe event handlers for consistent carousel control.
+
+---
+
+## ⚙️ Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/princeolalacious/cinecrush.git
+
+# Navigate into project directory
+cd cinecrush
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 📄 License
+
+project . Distributed under the MIT License.
+
+## ✍️ Author
+
+Designed and Created with ❤️ by princeUduma
+
+Copyright © 2026 CineCrush.

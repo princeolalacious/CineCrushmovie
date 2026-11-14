@@ -102,8 +102,8 @@ function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col justify-between gap-4 border-t border-line pt-8 text-xs text-[#e5dccd] md:flex-row">
           <p>
-            © 2026 CineCrush Cinema. All theatrical and streaming rights
-            reserved.
+            © 2026 CineCrush Cinema / <i>PrinceUduma</i>. All theatrical and
+            streaming rights reserved.
           </p>
           <div className="flex gap-6">
             {legalLinks.map(([label, to]) => (

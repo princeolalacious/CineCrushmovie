@@ -1,4 +1,4 @@
-# CineCrush 🎬
+# CineHub 🎬
 
 A modern, high-performance web application for discovering trending cinema, exploring curated reels, and tracking top box office hits with real-time match ratings and detailed movie insights.
 
@@ -65,4 +65,4 @@ project . Distributed under the MIT License.
 
 Designed and Created with ❤️ by princeUduma
 
-Copyright © 2026 CineCrush.
+Copyright © 2026 CineHub.

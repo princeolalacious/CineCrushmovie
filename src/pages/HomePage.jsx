@@ -15,7 +15,7 @@ function HomePage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    document.title = "CineCrush";
+    document.title = "CineHub";
   }, []);
 
   // Runs once when the page opens: load trending movies.

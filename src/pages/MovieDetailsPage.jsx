@@ -44,7 +44,7 @@ function MovieDetailsPage() {
       .then((data) => {
         setMovie(data)
         setStatus('success')
-        document.title = `${data.title} · CineScope`
+        document.title = `${data.title} · CineHub`
       })
       .catch((err) => {
         if (err.name === 'AbortError') return

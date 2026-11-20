@@ -35,7 +35,7 @@ function Header() {
           <div>
             <p className="text-xl font-extrabold leading-tight">
               <span className="text-ink">Cine</span>
-              <span className="text-gold">Crush</span>
+              <span className="text-gold">Hub</span>
             </p>
             <p className="hidden text-[10px] font-medium text-muted lg:block">
               Discover movies. Watch. Save.

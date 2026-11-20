@@ -16,7 +16,7 @@ function PassBanner() {
           <h3 className="text-lg font-bold">2 Free Curated Screening Passes Ready</h3>
           <p className="text-xs text-muted">
             Complimentary admission for premium auditorium screenings valid through end of month at any
-            CineScope partner theater.
+            CineHub partner theater.
           </p>
         </div>
       </div>

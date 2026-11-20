@@ -58,7 +58,7 @@ function FavoritesPage() {
   const [shareLabel, setShareLabel] = useState('Share Collection')
 
   useEffect(() => {
-    document.title = 'My Favorites · CineScope'
+    document.title = 'My Favorites · CineHub'
   }, [])
 
   // ---- Numbers for the banner ----
@@ -90,17 +90,17 @@ function FavoritesPage() {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = 'cinescope-favorites.json'
+    link.download = 'cinehub-favorites.json'
     link.click()
     URL.revokeObjectURL(url)
   }
 
   // Share the titles as text (phone share sheet, or copy to clipboard)
   async function handleShare() {
-    const text = `My CineScope favorites:\n${favorites.map((m) => `• ${m.title}`).join('\n')}`
+    const text = `My CineHub favorites:\n${favorites.map((m) => `• ${m.title}`).join('\n')}`
     try {
       if (navigator.share) {
-        await navigator.share({ title: 'My CineScope favorites', text })
+        await navigator.share({ title: 'My CineHub favorites', text })
       } else {
         await navigator.clipboard.writeText(text)
         setShareLabel('Copied to clipboard')
@@ -149,7 +149,7 @@ function FavoritesPage() {
               My Favorites <span className="text-2xl font-bold text-gold">({favorites.length})</span>
             </h1>
             <p className="text-sm text-muted">
-              Your personal cinematic archive. Save movies from anywhere in CineScope and find them all here.
+              Your personal cinematic archive. Save movies from anywhere in CineHub and find them all here.
             </p>
           </div>
 

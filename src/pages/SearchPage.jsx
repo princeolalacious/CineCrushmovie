@@ -70,7 +70,7 @@ function SearchPage() {
   }, [query])
 
   useEffect(() => {
-    document.title = query ? `“${query}” · CineScope` : 'Search · CineScope'
+    document.title = query ? `“${query}” · CineHub` : 'Search · CineHub'
   }, [query])
 
   // Load results whenever the search text or page changes.
